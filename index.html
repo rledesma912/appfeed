@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electron</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Feed reader</h2>
+
+      <div class="flipster">
+        <ul></ul>
+      </div>
+
+      <p class="stats"></p>
+    </div>
+
+    <script type="text/javascript">
+        window.$ = window.jQuery = require('./bower_components/jquery/dist/jquery.min.js');
+    </script>
+    <script type="text/javascript">
+        require('./index.js');
+    </script>
+    <script src="bower_components/popper.js/dist/umd/popper.min.js" ></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" ></script>
+    <script src="bower_components/jquery-flipster/dist/jquery.flipster.min.js" ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+          console.log(window.$);
+      });
+    </script>
+  </body>
+
+</html>

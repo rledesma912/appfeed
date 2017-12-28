@@ -1,0 +1,29 @@
+{
+  "name": "app2",
+  "description": "lector de feeds",
+  "main": "main.js",
+  "authors": [
+    "Ricardo Ledesma"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "electron",
+    "lector",
+    "feed",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/rledesma912/appfeed",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-flipster": "^1.1.3",
+    "jquery": "^3.2.1",
+    "bootstrap": "bootstrap4#^3.3.7"
+  }
+}
