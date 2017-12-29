@@ -2,14 +2,12 @@
 const REMOTE = require('electron').remote
 const MAIN = REMOTE.require('./main.js')
 
-let button = document.createElement('button')
-
-button.textContent = "Open window"
-document.body.appendChild(button)
-
-button.addEventListener('click', () => {
-  MAIN.openWindow();
-})
+// let button = document.createElement('button')
+// button.textContent = "Open window"
+// document.body.appendChild(button)
+// button.addEventListener('click', () => {
+//   MAIN.openWindow();
+// })
 
 $(function(){
   const OS = require('os')
@@ -36,7 +34,7 @@ $(function(){
 
 			li.find('a')
 				.attr('href', item.find('link').text())
-				.html('<br>'+item.find('title').text())
+				.html('<br>'+ item.find('title').text())
 
 			li.find('img').attr('src', imageSource)
 			li.find('img').attr('width', 400)

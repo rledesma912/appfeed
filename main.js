@@ -7,7 +7,7 @@ const URL = require("url")
 let win
 
 function createWindow(){
-  win = new BrowserWindow({ height: 700, width: 800})
+  win = new BrowserWindow({ height: 490, width: 800})
 
   win.loadURL(URL.format({
       pathname : PATH.join(__dirname, 'index.html'),
@@ -19,7 +19,7 @@ function createWindow(){
 }
 
 exports.openWindow = () => {
-  let win2 = new BrowserWindow({ height: 800, width: 600})
+  let win2 = new BrowserWindow({ height: 400, width: 200})
 
   win2.loadURL(URL.format({
       pathname : PATH.join(__dirname, 'feeds.html'),

@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/rledesma912/appfeed#readme",
   "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
     "electron": "^1.7.10"
   }
 }
